@@ -11,24 +11,3 @@ html {
     font-family:  var(--font-family-conttent);
     background-color: var(--bg-page);
 }
-.cartao {
-    background-color: var(--bg-cartao);
-    margin-top: 5rem;
-    margin: 3rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    margin: 0 auto;
-    width: 50%;
-    margin-top: 4rem;
-}
-.botao {
-    background-color: var(--bg-button);
-    border-radius: 0.8rem;
-    border-color: var(--bg-button);
-    color: var(--text-button);
-    display: block;
-    font-size: 20px;
-    height: 40px;
-    margin: 0 auto;
-    width: 250px;
-}
