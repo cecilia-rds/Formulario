@@ -2,20 +2,45 @@
     padding-top: 0.5rem;
     padding-bottom: 1.5rem;
 }
+
 .input-label {
     margin-top: 1rem;
 }
 input {
-    border: none;
-    border-bottom: 1px solid var(--bg-page);
+    border: 1px solid var(--bg-page);
     outline: none;
-    height: 1rem;
+    height: 2rem;
     width: 95%;
-    margin-top: 1.5rem;
     position: relative;
     margin-bottom: 1rem;
 }
 .input-mensagem-erro {
     color: var(--bg-input-erro);
     padding-bottom: 3.5rem;
+}
+
+.cartao {
+    background-color: var(--bg-cartao);
+    margin-top: 5rem;
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 3rem;
+}
+.botao {
+    background-color: var(--bg-button);
+    border-radius: 0.8rem;
+    border: var(--bg-button);
+    color: var(--text-button);
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    margin: 0 auto;
+    width: 250px;
+}
+.input-container{
+    margin-left: 3%;
+    
 }
