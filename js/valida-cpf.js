@@ -1,11 +1,9 @@
 export default function verificaCpf(input) {
-    const cpf = input.value.replace(/\.|-/g, ""); /* transforma pontos em espaço em branco */
+    const cpf = input.value.replace(/\.|-/g, ""); 
+
     if (verificaNumerosRepetidos(cpf) || validaPrimeiroDigito(cpf) || validaSegundoDigito(cpf)) {
-        console.log('CPF não existe')
-    } else {
-        console.log('existe')
-    }
-    console.log(verificaNumerosRepetidos(cpf));
+        input.setCustomValidity('Este CPF não é válido');
+    }    
 }
 function verificaNumerosRepetidos(cpf) {
     const numeroRepetidos = [
@@ -20,10 +18,11 @@ function verificaNumerosRepetidos(cpf) {
         '88888888888',
         '99999999999',
     ]
-    return numeroRepetidos.includes(cpf) /* verifica se o nimero digitado esta na lista  */
+    return numeroRepetidos.includes(cpf) 
+    
 
 } 
-/* validação cpf  */
+
 function validaPrimeiroDigito(cpf) {
     let soma = 0;
     let multiplicador = 10;
