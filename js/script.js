@@ -4,6 +4,23 @@ const inputsForm = document.querySelectorAll('[required]');
 
 const formilario = document.querySelector("[data-form]");
 
+formulario.addEventListener("submit", (e) => { 
+    e.preventDefault();
+    
+    const listaRespostas = { 
+        "nome": e.target.elements ["nome"].value,
+        "email": e.target.elements ["email"].value,
+        "cpf": e.target.elements ["cpf"].value,
+        "nascimento": e.target.elements ["nascimento"].value,
+    }
+    
+        localStorage.setItem("cadastro", JSON.stringify(listaRespostas))
+    
+        window.location.href = '/index.html'
+    
+    })
+                            
+
 inputsForm.forEach((input) => { 
     input.addEventListener("blur", () => verificaInput(input));   
     
