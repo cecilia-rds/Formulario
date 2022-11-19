@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> | Criar conta</title>
+    <title> | Cadastre-se</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -15,9 +15,9 @@
         <section class="cartao">
             <h1 class="cartao__titulo">Cadastre-se</h1>
             <form id="form" action="./cadastro_concluido.html" data-form>
-                <legend class="formulario__legenda">Informações pessoais</legend>
+                <legend class="formulario__legenda"></legend>
                     <div class="input-container">
-                        <label class="input-label" for="nome">Nome</label>
+                        <label class="input-label" for="nome">Nome</label>                       
                         <input name="nome" class="input" type="text" required minlength="2">
                         <span class="input-mensagem-erro"></span>
                     </div>
@@ -32,7 +32,7 @@
                         <span class="input-mensagem-erro"></span>
                     </div>
                     <div class="input-container">  
-                        <label class="input-label" for="nascimento">Data de nascimento</label>  
+                        <label class="input-label" for="nascimento">Data de nascimento</label>
                         <input name="nascimento" id="nasc" class="input" type="date" required>
                         <span class="input-mensagem-erro"></span>
                     </div>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="input-container">
                         <label class="input-label" for="senha">Senha</label>
-                        <input name="senha" class="input" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+                        <input name="senha" class="input" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" required>
                         <span class="input-mensagem-erro"></span>
                 </fieldset>
                 <button class="botao">Cadastrar</a>
