@@ -1,24 +1,9 @@
-.formulario__legenda {
+.cartao__titulo {
     padding-top: 0.5rem;
     padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: x-large;
 }
-
-.input-label {
-    margin-top: 1rem;
-}
-input {
-    border: 1px solid var(--bg-page);
-    outline: none;
-    height: 2rem;
-    width: 95%;
-    position: relative;
-    margin-bottom: 1rem;
-}
-.input-mensagem-erro {
-    color: var(--bg-input-erro);
-    padding-bottom: 3.5rem;
-}
-
 .cartao {
     background-color: var(--bg-cartao);
     margin-top: 5rem;
@@ -28,6 +13,28 @@ input {
     margin: 0 auto;
     width: 50%;
     margin-top: 3rem;
+}
+.input-container{
+    margin-left: 3%;
+    margin-bottom: 1rem;
+    
+}
+.input-label {
+    margin-top: 1rem;
+
+}
+input {
+    border: 1px solid var(--bg-page);
+    outline: none;
+    height: 2rem;
+    width: 95%;
+    margin-bottom: 0.3rem;
+}
+input:focus {
+    border: 2.5px solid var(--bg-page);
+}
+.input-mensagem-erro {
+    color: var(--bg-input-erro);
 }
 .botao {
     background-color: var(--bg-button);
@@ -39,8 +46,9 @@ input {
     height: 40px;
     margin: 0 auto;
     width: 250px;
+    margin-top: 1rem;
 }
-.input-container{
-    margin-left: 3%;
-    
+.botao:hover {
+    width: 270px;
+
 }
