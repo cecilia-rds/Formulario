@@ -39,32 +39,32 @@ const tiposDeErro = [
 
 const mensagens = {
     nome: {
-        valueMissing: "O campo de nome não pode estar vazio.",
+        valueMissing: "O campo nome não pode estar vazio.",
         patternMismatch: "Por favor, preencha um nome válido.",
         tooShort: "Por favor, preencha um nome válido."
     },
     sobrenome: {
-        valueMissing: "O campo de nome não pode estar vazio.",
+        valueMissing: "O campo sobrenome não pode estar vazio.",
         patternMismatch: "Por favor, preencha um nome válido.",
         tooShort: "Por favor, preencha um nome válido."
     },
     email: {
-        valueMissing: "O campo de e-mail não pode estar vazio.",
+        valueMissing: "O campo e-mail não pode estar vazio.",
         typeMismatch: "Por favor, preencha um email válido.",
         tooShort: "Por favor, preencha um e-mail válido."
     },
     cpf: {
-        valueMissing: 'O campo de CPF não pode estar vazio.',
+        valueMissing: 'O campo CPF não pode estar vazio.',
         patternMismatch: "Por favor, preencha um CPF válido.",
         customError: "O CPF digitado não existe.",
         tooShort: "O campo de CPF não tem caractéres suficientes."
     },
     nascimento: {
-        valueMissing: 'O campo de data de nascimento não pode estar vazio.',
-        customError: 'Você deve ser maior que 18 anos para se cadastrar.'
+        valueMissing: 'O campo data de nascimento não pode estar vazio.',
+        customError: 'Você deve 18 anos ou mais para se cadastrar.'
     },
     senha: {
-        valueMissing: 'O campo de senha não pode estar vazio.',
+        valueMissing: 'O campo senha não pode estar vazio.',
         patternMismatch: 'A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos.'
     }
 }
@@ -83,7 +83,7 @@ function verificaInput(input) {
         if (input.validity[erro]) {     
             mensagem = mensagens[input.name][erro]; 
             
-            console.log(mensagem)
+            
         }
     })
     const mensagemErro = input.parentNode.querySelector('.input-mensagem-erro'); 
@@ -95,6 +95,6 @@ function verificaInput(input) {
     } else {
         mensagemErro.textContent = "";
     }
-    console.log(input.validity)
+   
 }
 
