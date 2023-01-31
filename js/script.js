@@ -40,32 +40,32 @@ const tiposDeErro = [
 const mensagens = {
     nome: {
         valueMissing: "O campo nome não pode estar vazio.",
-        patternMismatch: "Por favor, preencha um nome válido.",
-        tooShort: "Por favor, preencha um nome válido."
+        patternMismatch: "Por favor, preencha com um nome válido.",
+        tooShort: "Por favor, preencha com um nome válido."
     },
     sobrenome: {
         valueMissing: "O campo sobrenome não pode estar vazio.",
-        patternMismatch: "Por favor, preencha um nome válido.",
-        tooShort: "Por favor, preencha um nome válido."
+        patternMismatch: "Por favor, preencha com um nome válido.",
+        tooShort: "Por favor, preencha com um nome válido."
     },
     email: {
         valueMissing: "O campo e-mail não pode estar vazio.",
-        typeMismatch: "Por favor, preencha um email válido.",
-        tooShort: "Por favor, preencha um e-mail válido."
+        typeMismatch: "Por favor, preencha com um email válido.",
+        tooShort: "Por favor, preencha com um e-mail válido."
     },
     cpf: {
         valueMissing: 'O campo CPF não pode estar vazio.',
-        patternMismatch: "Por favor, preencha um CPF válido.",
+        patternMismatch: "Por favor, preencha com um CPF válido.",
         customError: "O CPF digitado não existe.",
         tooShort: "O campo de CPF não tem caractéres suficientes."
     },
     nascimento: {
         valueMissing: 'O campo data de nascimento não pode estar vazio.',
-        customError: 'Você deve 18 anos ou mais para se cadastrar.'
+        customError: 'Você deve ter 18 anos ou mais para se cadastrar.'
     },
     senha: {
         valueMissing: 'O campo senha não pode estar vazio.',
-        patternMismatch: 'A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos.'
+        patternMismatch: 'A senha deve conter de 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos.'
     }
 }
 
