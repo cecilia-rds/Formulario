@@ -53,3 +53,12 @@ input:focus {
     width: 270px;
 
 }
+@media screen and (max-width: 748px) {
+    .botao {
+        width: 70%;
+    }
+    .botao:hover {
+        width: 71%;
+    
+    }
+}
